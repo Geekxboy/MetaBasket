@@ -1,0 +1,62 @@
+.order-status.status-send-error {
+	background: #ff000069;
+	color: #000;
+}
+
+#toplevel_page_mymeta-basket .wp-menu-image img {
+	width: 15px;
+}
+
+.display_meta .refresh-button {
+    margin-left: 200px;
+}
+
+.box-enjin-id {
+	width: 50%;
+}
+
+.enjin_id_input {
+    width: 40%;
+    margin-bottom: 7px !important;
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #7e8993;
+    padding: 0 8px;
+}
+
+.enjin_num_input {
+    width: 20% !important;
+    margin-bottom: 7px !important;
+    min-height: 30px !important;
+    box-shadow: 0 0 0 transparent !important;
+    border-radius: 4px !important;
+    border: 1px solid #7e8993 !important;
+    padding: 0 8px !important;
+	margin-right: 10px !important;
+}
+
+.delete_token_id {
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #520303;
+    position: absolute;
+    margin-left: 5px;
+    background: #c70000;
+    color: white;
+}
+
+.add_token_id {
+    min-height: 30px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #216900;
+    margin-left: 5px;
+    background: #22ba03;
+    color: white;
+}
+
+.nft-address-field .woocommerce-input-wrapper {
+    width: 100%;
+}
