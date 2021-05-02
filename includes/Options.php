@@ -16,7 +16,7 @@ function enjin_replace_order_button_html( $order_button ) {
 }
 
 function enjin_setup_menu() {
-	add_menu_page( 'MyMeta Basket', 'MyMeta Basket', 'manage_options', 'mymeta-basket', 'nifty_basket_menu_callback', plugins_url( 'nifty-basket/Icon.png' ) );
+	add_menu_page( 'MyMeta Basket', 'MyMeta Basket', 'manage_options', 'mymeta-basket', 'enjin_gateway_menu_callback', plugins_url( 'nifty-basket/Icon.png' ) );
 	add_submenu_page( 'mymeta-basket', 'Enjin Settings', 'Enjin Settings', 'manage_options', 'mymeta-basket-enjin', 'enjin_gateway_menu_callback' );
 }
 
