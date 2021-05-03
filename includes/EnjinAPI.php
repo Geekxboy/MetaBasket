@@ -112,7 +112,7 @@ class EnjinAPIMeta {
 				{
 				  token_id: "' . $token_id . '", 
 				  to: "' . $addr . '", 
-				  value: "1"
+				  value: "' . $amount . '"
 				}
 			  ]
 			}
