@@ -110,9 +110,8 @@ class EnjinAPIMeta {
 			advanced_send_token_data: {
 			  transfers: [
 				{
-				  token_id: "108000000000020a", 
-				  token_index: "0",
-				  to: "0xB34A5b5b52517c8502B46503b8F194Be65a4DD8a", 
+				  token_id: "' . $token_id . '", 
+				  to: "' . $addr '", 
 				  value: "1"
 				}
 			  ]
