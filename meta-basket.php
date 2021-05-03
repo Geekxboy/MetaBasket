@@ -4,7 +4,7 @@ Plugin Name: Meta Basket
 Description: Adds a woocommerce product field that is used for sending items to the enjin address provided.
 Author: MyMetaverse
 Author URI: https://mymetaverse.io/
-Version: 1.1.0
+Version: 1.1.1
 */
 
 if (!defined('ABSPATH')) {

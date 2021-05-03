@@ -111,7 +111,7 @@ class EnjinAPIMeta {
 			  transfers: [
 				{
 				  token_id: "' . $token_id . '", 
-				  to: "' . $addr '", 
+				  to: "' . $addr . '", 
 				  value: "1"
 				}
 			  ]
