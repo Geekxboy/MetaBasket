@@ -9,6 +9,8 @@ Limited support available on the MyMetaverse Discord: https://discord.gg/gTAMVWx
 
 ### How to Install MyMeta Basket
 
+INSTRUCTION VIDEO: https://www.loom.com/share/b419d72e720b4887830d2a14dd5f6c8b
+
 IMPORTANT: You need an Enjin Platform account to install this plugin.
 
 Step 1: Download the MyMeta Basket plugin. Clone or download this repo and upload it into the plugin folder inside your Wordpress installation.
