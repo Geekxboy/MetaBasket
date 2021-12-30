@@ -4,7 +4,7 @@ MyMeta Basket is the world's first plug-and-play Wordpress/Enjin/Ethereum integr
 
 We originally created this integration so we could sell our own ERC-1155 tokens through our website, but after being so proud of the user experience we designed, we decided to make it available to every Wordpress site!
 
-Limited support available on the MyMetaverse Discord: https://discord.gg/gTAMVWxBpT
+WE DO NOT USE THIS PLUGIN OURSELVES, THEREFORE WE CANNOT PROVIDE UPDATES OR ONGOING SUPPORT FOR IT.
 
 
 ### How to Install MyMeta Basket
