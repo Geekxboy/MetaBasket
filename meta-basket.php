@@ -26,11 +26,11 @@ require_once ENJIN_PLUGIN_PATH . 'includes/User-Fields.php';
 
 
 
-if (!function_exists('nifty_plugin_activate_hooks')) {
-	add_action( 'init', 'nifty_plugin_activate_hooks' );
+if (!function_exists('meta_plugin_activate_hooks')) {
+	add_action( 'init', 'meta_plugin_activate_hooks' );
 
-	function nifty_plugin_activate_hooks() {
-		do_action( 'nifty_plugin_enjin_user_fields' );
-		do_action( 'nifty_plugin_extra_functions' );
+	function meta_plugin_activate_hooks() {
+		do_action( 'meta_plugin_enjin_user_fields' );
+		do_action( 'meta_plugin_extra_functions' );
 	}
 }

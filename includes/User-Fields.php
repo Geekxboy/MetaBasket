@@ -1,9 +1,9 @@
 <?php
 if (!defined('ABSPATH')) exit;
 
-add_action( 'nifty_plugin_enjin_user_fields', 'nifty_basket_fields', 1 );
+add_action( 'meta_plugin_enjin_user_fields', 'meta_basket_fields', 1 );
 
-function nifty_basket_fields() {
+function meta_basket_fields() {
 	add_action( 'show_user_profile', 'enjin_extra_user_profile_fields' );
 	add_action( 'edit_user_profile', 'enjin_extra_user_profile_fields' );
 

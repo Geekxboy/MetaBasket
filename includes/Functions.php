@@ -2,17 +2,17 @@
 
 if (!defined('ABSPATH')) exit;
 
-add_action('wp_enqueue_scripts', 'nifty_enqueue_assets', 0);
-add_action('admin_enqueue_scripts', 'nifty_enqueue_assets', 0);
+add_action('wp_enqueue_scripts', 'meta_enqueue_assets', 0);
+add_action('admin_enqueue_scripts', 'meta_enqueue_assets', 0);
 
-function nifty_enqueue_assets() {
+function meta_enqueue_assets() {
 	wp_enqueue_script('jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js', array('jquery'), '1.12.0');
-	wp_enqueue_style( 'niftybasket-css', ENJIN_PLUGIN_URL . 'assets/css/style.css', array(), '1.0.2' );
+	wp_enqueue_style( 'metabasket-css', ENJIN_PLUGIN_URL . 'assets/css/style.css', array(), '1.0.2' );
 	
-	wp_register_script( "niftybasket-ajax", ENJIN_PLUGIN_URL . 'assets/js/script.js', array('jquery'), '1.0.4' );
-	wp_localize_script( 'niftybasket-ajax', 'niftybasketAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'plugin_url' => ENJIN_PLUGIN_URL));  
+	wp_register_script( "metabasket-ajax", ENJIN_PLUGIN_URL . 'assets/js/script.js', array('jquery'), '1.0.4' );
+	wp_localize_script( 'metabasket-ajax', 'metabasketAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'plugin_url' => ENJIN_PLUGIN_URL));  
 	
-	wp_enqueue_script( 'niftybasket-ajax' );
+	wp_enqueue_script( 'metabasket-ajax' );
 }
 
 // Create Cron Schedule
@@ -32,8 +32,8 @@ if(!wp_next_scheduled('enjin_status_schedule_hook')){
 
 
 // Ajax Calls
-add_action("wp_ajax_nifty_basket_check_status", "nifty_basket_check_status");
-function nifty_basket_check_status() {
+add_action("wp_ajax_meta_basket_check_status", "meta_basket_check_status");
+function meta_basket_check_status() {
 	
 	enjin_status_schedule_hook_action();
 	

@@ -9,8 +9,8 @@ jQuery(document).ready(function(){
 		jQuery.ajax({
 			type : "post",
 			dataType : "json",
-			url : niftybasketAjax.ajaxurl,
-			data : {action: "nifty_basket_check_status"},
+			url : metabasketAjax.ajaxurl,
+			data : {action: "meta_basket_check_status"},
 			success: function(response) {
 				if(response.type == "success") {
 					console.log("Status check completed");

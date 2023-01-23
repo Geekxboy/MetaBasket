@@ -109,7 +109,7 @@ function woocommerce_enjin_gateway_fields() {
 	
 	if (!$enjin->isAuthorized()) {
 		$customAttr['readonly'] = 'readonly';
-		$message = "Enjin not connected. <a href='" . admin_url( 'admin.php?page=nifty-basket' ) . "'>Click here to connect</a>.";
+		$message = "Enjin not connected. <a href='" . admin_url( 'admin.php?page=meta-basket' ) . "'>Click here to connect</a>.";
 	}
 	
     global $woocommerce, $post;
@@ -243,7 +243,7 @@ function processOrder($order_id) {
 			}
 		}
 	} else {
-		$order->add_order_note(_("Could not Authorize Nifty Basket"));
+		$order->add_order_note(_("Could not Authorize meta Basket"));
 	}
 }
 
